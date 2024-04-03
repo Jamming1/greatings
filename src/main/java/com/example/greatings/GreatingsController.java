@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.*;
 public class GreatingsController {
     @GetMapping(path = "/ciao")
     public String ciao(@RequestParam String nome,@RequestParam String regione) {
-        return "Ciao " + nome + " !" + "Com'è il tempo in " + regione + " ?";
+        return "Ciao " + nome + "!" + "Com'è il tempo in " + regione + "?";
     }
 }
